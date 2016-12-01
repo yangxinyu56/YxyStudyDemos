@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">YxyStudyDemos</string>
+    <string-array name="main_list_demo_names">
+        <item>aa</item>
+        <item>bb</item>
+        <item>cc</item>
+        <item>dd</item>
+        <item>ee</item>
+    </string-array>
 </resources>

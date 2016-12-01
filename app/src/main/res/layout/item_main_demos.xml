@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="mainItemEntity"
+            type="com.study.yxy.demos.bean.MainItemEntity" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_btn_height"
+            android:gravity="center"
+            android:tag="@{mainItemEntity.id}"
+            android:text="@{mainItemEntity.itemName}"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+    </LinearLayout>
+</layout>
