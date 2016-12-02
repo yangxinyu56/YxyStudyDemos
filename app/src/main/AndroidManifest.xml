@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.study.yxy.demos">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -17,7 +17,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.ViewPagerActivity"/>
+        <activity android:name=".ui.ViewPagerActivity" />
+        <activity android:name=".ui.glide.GlideActivity" />
+        <activity android:name=".ui.glide.GlideBaseActivity" />
+        <activity android:name=".ui.glide.GlideRecyclerActivity" />
+        <activity android:name=".ui.glide.GlideTransformationsActivity"/>
     </application>
 
 </manifest>

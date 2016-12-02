@@ -2,7 +2,7 @@
     <string name="app_name">YxyStudyDemos</string>
     <string-array name="main_list_demo_names">
         <item>ViewPager+TabLayout</item>
-        <item>bb</item>
+        <item>Glide</item>
         <item>cc</item>
         <item>dd</item>
         <item>ee</item>

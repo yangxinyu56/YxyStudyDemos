@@ -12,6 +12,7 @@ import com.study.yxy.demos.R;
 import com.study.yxy.demos.bean.MainItemEntity;
 import com.study.yxy.demos.databinding.ActivityMainBinding;
 import com.study.yxy.demos.ui.adapter.ListAdapter;
+import com.study.yxy.demos.ui.glide.GlideActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -54,6 +55,9 @@ public class MainActivity extends AppCompatActivity {
         switch (position){
             case 0:
                 startActivity(new Intent(this,ViewPagerActivity.class));
+                break;
+            case 1:
+                startActivity(new Intent(this,GlideActivity.class));
                 break;
             default:
                 break;
