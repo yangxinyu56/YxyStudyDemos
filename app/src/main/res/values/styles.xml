@@ -8,4 +8,14 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!-- TabLayoutText Style. -->
+    <style name="MyTabTextStyle" parent="TextAppearance.Design.Tab">
+        <!--Tab字体的大小-->
+        <item name="android:textSize">18sp</item>
+        <!--Tab字体的默认的颜色-->
+        <item name="android:textColor">#1D000000</item>
+        <!--Tab字体是否为大写-->
+        <item name="textAllCaps">false</item>
+    </style>
+
 </resources>

@@ -1,9 +1,9 @@
 package com.study.yxy.demos.ui;
 
+import android.content.Intent;
 import android.databinding.DataBindingUtil;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 
@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         binding.lvMainDemos.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Log.i("aaa","position= "+position);
+                jumpActivity(position);
             }
         });
     }
@@ -50,4 +50,13 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    private void jumpActivity(int position) {
+        switch (position){
+            case 0:
+                startActivity(new Intent(this,ViewPagerActivity.class));
+                break;
+            default:
+                break;
+        }
+    }
 }
