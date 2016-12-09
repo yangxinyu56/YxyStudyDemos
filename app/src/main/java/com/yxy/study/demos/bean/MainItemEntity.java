@@ -1,8 +1,5 @@
-package com.study.yxy.demos.bean;
+package com.yxy.study.demos.bean;
 
-/**
- * Created by yxy on 2016/12/1.
- */
 
 public class MainItemEntity {
     public int id;

@@ -6,7 +6,7 @@
 
         <variable
             name="vpAdapter"
-            type="com.study.yxy.demos.ui.adapter.MyViewPagerAdapter" />
+            type="com.yxy.study.demos.ui.adapter.MyViewPagerAdapter" />
     </data>
 
     <LinearLayout

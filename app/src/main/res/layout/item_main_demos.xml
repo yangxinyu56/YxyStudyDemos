@@ -5,7 +5,7 @@
 
         <variable
             name="mainItemEntity"
-            type="com.study.yxy.demos.bean.MainItemEntity" />
+            type="com.yxy.study.demos.bean.MainItemEntity" />
     </data>
 
     <LinearLayout

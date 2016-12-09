@@ -1,4 +1,4 @@
-package com.study.yxy.demos.ui;
+package com.yxy.study.demos.ui;
 
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
@@ -9,9 +9,9 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
-import com.study.yxy.demos.R;
-import com.study.yxy.demos.databinding.ActivityViewpagerBinding;
-import com.study.yxy.demos.ui.adapter.MyViewPagerAdapter;
+import com.yxy.study.demos.R;
+import com.yxy.study.demos.databinding.ActivityViewpagerBinding;
+import com.yxy.study.demos.ui.adapter.MyViewPagerAdapter;
 
 import java.util.ArrayList;
 import java.util.List;

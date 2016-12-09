@@ -6,7 +6,7 @@
     <data>
         <variable
             name="adapter"
-            type="com.study.yxy.demos.ui.adapter.ListAdapter" />
+            type="com.yxy.study.demos.ui.adapter.SimpleListAdapter" />
     </data>
 
     <LinearLayout
@@ -17,7 +17,7 @@
         android:paddingLeft="@dimen/activity_horizontal_margin"
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
-        tools:context="com.study.yxy.demos.ui.MainActivity">
+        tools:context="com.yxy.study.demos.ui.MainActivity">
 
         <ListView
             android:id="@+id/lv_main_demos"
