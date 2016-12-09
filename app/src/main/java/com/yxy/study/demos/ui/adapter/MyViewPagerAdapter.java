@@ -1,4 +1,4 @@
-package com.study.yxy.demos.ui.adapter;
+package com.yxy.study.demos.ui.adapter;
 
 import android.support.v4.view.PagerAdapter;
 import android.view.View;

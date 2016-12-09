@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.Android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="glideRecyclerItemEntity"
+            type="com.yxy.study.demos.bean.GlideRecyclerItemEntity" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{String.valueOf(glideRecyclerItemEntity.id)}"
+            android:textAllCaps="false" />
+
+        <com.yxy.study.demos.widget.GlideImageView
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            bind:load="@{glideRecyclerItemEntity.iconUrl}" />
+    </LinearLayout>
+</layout>

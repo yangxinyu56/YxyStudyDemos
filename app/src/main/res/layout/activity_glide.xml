@@ -18,7 +18,7 @@
         android:paddingLeft="@dimen/activity_horizontal_margin"
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
-        tools:context="com.study.yxy.demos.ui.glide.GlideActivity">
+        tools:context="com.yxy.study.demos.ui.glide.GlideActivity">
 
         <Button
             android:id="@+id/btn_glide_demo1"

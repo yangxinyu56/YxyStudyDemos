@@ -1,4 +1,4 @@
-package com.study.yxy.demos.ui;
+package com.yxy.study.demos.ui;
 
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
@@ -7,15 +7,17 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 
-import com.study.yxy.demos.BR;
-import com.study.yxy.demos.R;
-import com.study.yxy.demos.bean.MainItemEntity;
-import com.study.yxy.demos.databinding.ActivityMainBinding;
-import com.study.yxy.demos.ui.adapter.ListAdapter;
-import com.study.yxy.demos.ui.glide.GlideActivity;
+import com.yxy.study.demos.databinding.ActivityMainBinding;
+import com.yxy.study.demos.R;
+import com.yxy.study.demos.BR;
+import com.yxy.study.demos.bean.MainItemEntity;
+import com.yxy.study.demos.ui.adapter.SimpleListAdapter;
+import com.yxy.study.demos.ui.glide.GlideActivity;
 
 import java.util.ArrayList;
 import java.util.List;
+
+
 /**
  * Created by yxy on 2016/12/1.<br/>
  * 主页 运用了dataBinding
@@ -29,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
         initData();
-        ListAdapter<MainItemEntity> adapter = new ListAdapter<>(MainActivity.this, list, R.layout.item_main_demos, BR.mainItemEntity);
+        SimpleListAdapter<MainItemEntity> adapter = new SimpleListAdapter<>(MainActivity.this, list, R.layout.item_main_demos, BR.mainItemEntity);
         binding.setAdapter(adapter);
         setListener();
     }

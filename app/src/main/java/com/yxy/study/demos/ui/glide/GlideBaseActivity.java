@@ -1,12 +1,12 @@
-package com.study.yxy.demos.ui.glide;
+package com.yxy.study.demos.ui.glide;
 
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
 import com.bumptech.glide.Glide;
-import com.study.yxy.demos.R;
-import com.study.yxy.demos.databinding.ActivityGlideBaseBinding;
+import com.yxy.study.demos.databinding.ActivityGlideBaseBinding;
+import com.yxy.study.demos.R;
 
 public class GlideBaseActivity extends AppCompatActivity {
 
