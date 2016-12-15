@@ -21,7 +21,8 @@
         <activity android:name=".ui.glide.GlideActivity" />
         <activity android:name=".ui.glide.GlideBaseActivity" />
         <activity android:name=".ui.glide.GlideRecyclerActivity" />
-        <activity android:name=".ui.glide.GlideTransformationsActivity"/>
+        <activity android:name=".ui.glide.GlideTransformationsActivity" />
+        <activity android:name=".ui.ExpandableListViewActivity"/>
     </application>
 
 </manifest>

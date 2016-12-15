@@ -4,11 +4,15 @@ import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
+import android.view.View;
+import android.widget.Toast;
 
-import com.yxy.study.demos.databinding.ActivityGlideRecyclerBinding;
-import com.yxy.study.demos.R;
 import com.yxy.study.demos.BR;
+import com.yxy.study.demos.R;
 import com.yxy.study.demos.bean.GlideRecyclerItemEntity;
+import com.yxy.study.demos.databinding.ActivityGlideRecyclerBinding;
+import com.yxy.study.demos.ui.adapter.ItemClickSupport;
 import com.yxy.study.demos.ui.adapter.SimpleRecyclerViewAdapter;
 
 import java.util.ArrayList;
@@ -27,6 +31,15 @@ public class GlideRecyclerActivity extends AppCompatActivity {
         binding.rcvGlideRecycler.setLayoutManager(new LinearLayoutManager(this,
                 LinearLayoutManager.VERTICAL, false));
         binding.rcvGlideRecycler.setAdapter(myAdapter);
+        ItemClickSupport.addTo(binding.rcvGlideRecycler).setOnItemClickListener(
+                new ItemClickSupport.OnItemClickListener() {
+                    @Override
+                    public void onItemClicked(RecyclerView recyclerView, int position, View v) {
+                        Toast.makeText(GlideRecyclerActivity.this, "NO." + mList.get(position).id, Toast.LENGTH_SHORT).show();
+                    }
+
+                }
+        );
     }
 
     private void initData() {

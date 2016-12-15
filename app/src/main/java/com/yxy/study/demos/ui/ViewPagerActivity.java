@@ -7,6 +7,7 @@ import android.support.design.widget.TabLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.yxy.study.demos.R;
@@ -52,6 +53,13 @@ public class ViewPagerActivity extends AppCompatActivity {
         for (int i = 0; i < 5; i++) {
             View view1 = View.inflate(this, R.layout.item_viewpager_demos, null);
             ImageView imageView = (ImageView) view1.findViewById(R.id.iv_item_vp_demo);
+            final int finalI = i;
+            imageView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Toast.makeText(ViewPagerActivity.this,"NO."+ finalI,Toast.LENGTH_SHORT).show();
+                }
+            });
 //            ImageView imageView = new ImageView(this);
 //            ViewGroup.LayoutParams params = new ViewGroup.LayoutParams(400, 300);
 //            imageView.setLayoutParams(params);
