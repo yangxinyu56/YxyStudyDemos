@@ -61,6 +61,9 @@ public class MainActivity extends AppCompatActivity {
             case 1:
                 startActivity(new Intent(this,GlideActivity.class));
                 break;
+            case 2:
+                startActivity(new Intent(this,ExpandableListViewActivity.class));
+                break;
             default:
                 break;
         }
