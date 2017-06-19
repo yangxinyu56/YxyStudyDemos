@@ -64,6 +64,9 @@ public class MainActivity extends AppCompatActivity {
             case 2:
                 startActivity(new Intent(this,ExpandableListViewActivity.class));
                 break;
+            case 3:
+                startActivity(new Intent(this,AnimActivity.class));
+                break;
             default:
                 break;
         }
