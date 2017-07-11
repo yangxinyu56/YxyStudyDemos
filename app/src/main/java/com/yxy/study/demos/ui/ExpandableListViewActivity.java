@@ -33,7 +33,7 @@ public class ExpandableListViewActivity extends AppCompatActivity {
         binding.elvDemo.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
             @Override
             public boolean onChildClick(ExpandableListView expandableListView, View view, int i, int i1, long l) {
-                Toast.makeText(ExpandableListViewActivity.this, "NO." + adapter.getChildrenData().get(i).get(i1).studentName, Toast.LENGTH_SHORT).show();
+                Toast.makeText(ExpandableListViewActivity.this, "NO." + adapter.getChildrenData().get(i).get(i1).getStudentName(), Toast.LENGTH_SHORT).show();
                 return false;
             }
         });
@@ -49,7 +49,7 @@ public class ExpandableListViewActivity extends AppCompatActivity {
             List<StudentEntity> temp = new ArrayList<>();
             for (int j = 0; j < 20; j++) {
                 StudentEntity childData = new StudentEntity();
-                childData.studentName = "第" + i + "班学生-" + j;
+                childData.setStudentName("第" + i + "班学生-" + j);
                 temp.add(childData);
 
             }

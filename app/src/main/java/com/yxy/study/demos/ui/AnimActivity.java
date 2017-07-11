@@ -10,6 +10,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.Toast;
 
 import com.yxy.study.demos.R;
+import com.yxy.study.demos.bean.StudentEntity;
 import com.yxy.study.demos.databinding.ActivityAnimBinding;
 import com.yxy.study.demos.manager.AnimManager;
 
@@ -22,7 +23,8 @@ public class AnimActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-         binding = DataBindingUtil.setContentView(this, R.layout.activity_anim);
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_anim);
+        binding.setStudent(new StudentEntity());
         List<View> views = getViews();
         List<Animation> anims = getAnimations();
 
