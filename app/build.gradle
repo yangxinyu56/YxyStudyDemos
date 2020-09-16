@@ -1,12 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    compileSdkVersion 28
+    buildToolsVersion "28.0.0"
     defaultConfig {
         applicationId "com.yxy.study.demos"
-        minSdkVersion 15
-        targetSdkVersion 25
+        minSdkVersion 16
+        targetSdkVersion 26
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -20,19 +20,26 @@ android {
     dataBinding {
         enabled = true
     }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile 'com.android.support:appcompat-v7:25.3.1'
-    compile 'com.android.support:design:25.3.1'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
 
     //Glide以及图片变换
-    compile 'com.github.bumptech.glide:glide:3.7.0'
-    compile 'jp.wasabeef:glide-transformations:2.0.1'
-    compile 'jp.co.cyberagent.android.gpuimage:gpuimage-library:1.4.1'
-    testCompile 'junit:junit:4.12'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'jp.wasabeef:glide-transformations:2.0.1'
+    implementation 'jp.co.cyberagent.android.gpuimage:gpuimage-library:1.4.1'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.king.zxing:zxing-lite:1.1.9'
 }
