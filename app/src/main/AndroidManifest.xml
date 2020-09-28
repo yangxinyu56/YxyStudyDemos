@@ -23,8 +23,8 @@
         <activity android:name=".ui.glide.GlideRecyclerActivity"/>
         <activity android:name=".ui.glide.GlideTransformationsActivity"/>
         <activity android:name=".ui.ExpandableListViewActivity"/>
-        <activity android:name=".ui.AnimActivity">
-        </activity>
+        <activity android:name=".ui.AnimActivity"/>
+        <activity android:name=".ui.DecodeActivity"/>
     </application>
 
 </manifest>

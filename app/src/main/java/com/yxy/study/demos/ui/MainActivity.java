@@ -37,12 +37,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setListener() {
-        binding.lvMainDemos.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                jumpActivity(position);
-            }
-        });
+        binding.lvMainDemos.setOnItemClickListener((parent, view, position, id) -> jumpActivity(position));
     }
 
     private void initData() {
@@ -66,6 +61,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case 3:
                 startActivity(new Intent(this,AnimActivity.class));
+                break;
+            case 4:
+                startActivity(new Intent(this,DecodeActivity.class));
                 break;
             default:
                 break;
